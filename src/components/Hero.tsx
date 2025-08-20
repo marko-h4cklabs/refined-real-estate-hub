@@ -43,7 +43,7 @@ const Hero = () => {
       
       {/* Hero Content */}
       <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
-        <div className="fade-in-up">
+        <div className="fade-in-up animate">
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-heading font-light mb-6 tracking-wide">
             Your Partner in Premium
             <span className="block text-primary font-medium">Real Estate</span>
