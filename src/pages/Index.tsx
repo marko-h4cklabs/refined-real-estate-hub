@@ -33,7 +33,9 @@ const Index = () => {
     <div className="min-h-screen">
       <Navigation />
       <main>
-        <Hero />
+        <section id="hero">
+          <Hero />
+        </section>
         <About />
         <Properties />
         <Reviews />
@@ -41,9 +43,9 @@ const Index = () => {
       </main>
       
       {/* Footer */}
-      <footer className="bg-primary text-primary-foreground py-8">
+      <footer className="bg-foreground text-white py-8">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <p className="text-primary-foreground/80">
+          <p className="text-white/80">
             © 2024 Luxury Realty. All rights reserved. Licensed Real Estate Professional.
           </p>
         </div>

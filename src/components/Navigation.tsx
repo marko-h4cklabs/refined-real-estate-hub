@@ -14,40 +14,32 @@ const Navigation = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-      setIsMobileMenuOpen(false);
-    }
+  const scrollToSection = (id: string) => {
+    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
+    setIsMobileMenuOpen(false);
   };
 
   const navItems = [
-    { label: 'Home', id: 'home' },
-    { label: 'About', id: 'about' },
-    { label: 'Properties', id: 'properties' },
-    { label: 'Reviews', id: 'reviews' },
-    { label: 'Contact', id: 'contact' }
+    { name: 'Home', id: 'hero' },
+    { name: 'About', id: 'about' },
+    { name: 'Properties', id: 'properties' },
+    { name: 'Reviews', id: 'reviews' },
+    { name: 'Contact', id: 'contact' },
   ];
 
   return (
-    <nav className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-      isScrolled 
-        ? 'bg-background/95 backdrop-blur-md shadow-card' 
-        : 'bg-transparent'
+    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      isScrolled ? 'bg-white shadow-card' : 'bg-transparent'
     }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <button 
-              onClick={() => scrollToSection('home')}
-              className={`text-2xl font-heading font-bold ${
-                isScrolled ? 'text-primary' : 'text-primary-foreground'
-              } hover:text-accent transition-colors duration-200`}
-            >
-              Luxury Realty
-            </button>
+            <h2 className={`text-xl font-heading font-medium tracking-wide ${
+              isScrolled ? 'text-foreground' : 'text-white'
+            }`}>
+              <span className={isScrolled ? 'text-primary' : 'text-primary'}>Luxury</span> Realty
+            </h2>
           </div>
 
           {/* Desktop Navigation */}
@@ -55,15 +47,15 @@ const Navigation = () => {
             <div className="ml-10 flex items-baseline space-x-8">
               {navItems.map((item) => (
                 <button
-                  key={item.id}
+                  key={item.name}
                   onClick={() => scrollToSection(item.id)}
-                  className={`link-elegant px-3 py-2 text-sm font-medium transition-colors duration-200 ${
+                  className={`px-3 py-2 text-sm font-medium tracking-wide transition-colors duration-200 link-clean ${
                     isScrolled 
                       ? 'text-foreground hover:text-primary' 
-                      : 'text-primary-foreground/90 hover:text-primary-foreground'
+                      : 'text-white hover:text-primary'
                   }`}
                 >
-                  {item.label}
+                  {item.name}
                 </button>
               ))}
             </div>
@@ -71,10 +63,9 @@ const Navigation = () => {
 
           {/* Contact Button */}
           <div className="hidden md:block">
-            <Button 
+            <Button
               onClick={() => scrollToSection('contact')}
-              variant={isScrolled ? "default" : "outline"}
-              className={isScrolled ? "btn-luxury" : "btn-outline-luxury border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary"}
+              className={`btn-primary ${isScrolled ? '' : 'bg-primary/90'}`}
             >
               Get in Touch
             </Button>
@@ -84,45 +75,35 @@ const Navigation = () => {
           <div className="md:hidden">
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className={`inline-flex items-center justify-center p-2 rounded-md transition-colors duration-200 ${
-                isScrolled 
-                  ? 'text-foreground hover:text-primary hover:bg-muted' 
-                  : 'text-primary-foreground hover:text-accent hover:bg-primary-foreground/10'
-              }`}
+              className={`p-2 ${isScrolled ? 'text-foreground' : 'text-white'}`}
             >
-              <svg className="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
-                {isMobileMenuOpen ? (
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
-                ) : (
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
-                )}
+              <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
               </svg>
             </button>
           </div>
         </div>
       </div>
 
-      {/* Mobile Navigation Menu */}
+      {/* Mobile Navigation */}
       {isMobileMenuOpen && (
-        <div className="md:hidden">
-          <div className="px-2 pt-2 pb-3 space-y-1 bg-background/95 backdrop-blur-md shadow-card">
+        <div className="md:hidden bg-white border-t border-border">
+          <div className="px-2 pt-2 pb-3 space-y-1">
             {navItems.map((item) => (
               <button
-                key={item.id}
+                key={item.name}
                 onClick={() => scrollToSection(item.id)}
-                className="block px-3 py-2 text-base font-medium text-foreground hover:text-primary hover:bg-muted rounded-md transition-colors duration-200 w-full text-left"
+                className="block px-3 py-2 text-base font-medium text-foreground hover:text-primary w-full text-left"
               >
-                {item.label}
+                {item.name}
               </button>
             ))}
-            <div className="pt-4">
-              <Button 
-                onClick={() => scrollToSection('contact')}
-                className="w-full btn-luxury"
-              >
-                Get in Touch
-              </Button>
-            </div>
+            <Button
+              onClick={() => scrollToSection('contact')}
+              className="btn-primary w-full mt-4"
+            >
+              Get in Touch
+            </Button>
           </div>
         </div>
       )}

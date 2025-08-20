@@ -1,110 +1,77 @@
+import { Star, Quote } from "lucide-react";
+
 const Reviews = () => {
   const reviews = [
     {
       id: 1,
-      name: "Sarah Mitchell",
-      role: "Tech Executive",
-      review: "Exceptional service from start to finish. The attention to detail and market knowledge made our luxury home purchase seamless. Highly recommend for anyone seeking premium real estate expertise.",
+      name: "Sarah Johnson",
+      role: "Homebuyer",
       rating: 5,
-      location: "Beverly Hills, CA"
+      text: "Exceptional service from start to finish. The attention to detail and market knowledge made our home buying experience seamless and stress-free.",
+      image: "https://images.unsplash.com/photo-1494790108755-2616b612b1e0?w=150&h=150&fit=crop&crop=face"
     },
     {
       id: 2,
-      name: "James Thompson",
-      role: "Investment Banker",
-      review: "Professional, knowledgeable, and truly dedicated. Sold our $12M property in record time and above asking price. The marketing strategy was brilliant and execution flawless.",
+      name: "Michael Chen",
+      role: "Property Investor",
       rating: 5,
-      location: "Manhattan, NY"
+      text: "Outstanding expertise in luxury real estate. Helped us identify and secure multiple investment properties with excellent ROI potential.",
+      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face"
     },
     {
       id: 3,
-      name: "Maria Rodriguez",
-      role: "Entertainment Industry",
-      review: "Found us our dream home in an incredibly competitive market. The negotiation skills and industry connections made all the difference. Couldn't be happier with the outcome.",
+      name: "Emily Rodriguez",
+      role: "First-time Buyer",
       rating: 5,
-      location: "Malibu, CA"
-    }
+      text: "Patient, knowledgeable, and truly caring. Made our first home purchase an enjoyable journey rather than a stressful ordeal.",
+      image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop&crop=face"
+    },
   ];
 
-  const renderStars = (rating: number) => {
-    return Array.from({ length: 5 }, (_, index) => (
-      <span key={index} className={`text-xl ${index < rating ? 'text-accent' : 'text-muted'}`}>
-        ★
-      </span>
-    ));
-  };
-
   return (
-    <section id="reviews" className="section-padding bg-gradient-to-br from-secondary/50 to-accent-muted/30">
+    <section id="reviews" className="section-padding bg-muted">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16 fade-in-up">
-          <h2 className="text-4xl lg:text-6xl font-heading font-bold text-primary mb-6">
-            Client Success Stories
+          <h2 className="text-3xl md:text-4xl font-heading font-light mb-6 text-foreground">
+            Client <span className="text-primary font-medium">Testimonials</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Don't just take my word for it. Here's what discerning clients say about their 
-            experience working with me on their luxury real estate transactions.
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            Hear what my clients have to say about their experience working with me.
           </p>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {reviews.map((review, index) => (
-            <div 
-              key={review.id}
-              className="card-luxury p-8 fade-in-up"
-              style={{ animationDelay: `${index * 0.1}s` }}
-            >
-              {/* Rating Stars */}
-              <div className="flex justify-center mb-6">
-                {renderStars(review.rating)}
+            <div key={review.id} className="fade-in-up card-clean p-8" style={{ animationDelay: `${index * 0.1}s` }}>
+              <Quote className="h-8 w-8 text-primary mb-6" />
+              
+              <div className="flex mb-4">
+                {[...Array(review.rating)].map((_, i) => (
+                  <Star key={i} className="h-5 w-5 text-primary fill-current" />
+                ))}
               </div>
-
-              {/* Review Text */}
-              <blockquote className="text-foreground/80 text-lg leading-relaxed mb-6 italic">
-                "{review.review}"
-              </blockquote>
-
-              {/* Reviewer Info */}
-              <div className="text-center border-t border-border pt-6">
-                <div className="font-heading font-semibold text-primary text-lg mb-1">
-                  {review.name}
-                </div>
-                <div className="text-muted-foreground text-sm mb-2">
-                  {review.role}
-                </div>
-                <div className="text-accent text-sm font-medium">
-                  {review.location}
+              
+              <p className="text-muted-foreground mb-6 leading-relaxed">
+                "{review.text}"
+              </p>
+              
+              <div className="flex items-center">
+                <img
+                  src={review.image}
+                  alt={review.name}
+                  className="w-12 h-12 rounded-full object-cover mr-4"
+                />
+                <div>
+                  <h4 className="font-heading font-medium text-foreground">
+                    {review.name}
+                  </h4>
+                  <p className="text-sm text-muted-foreground">
+                    {review.role}
+                  </p>
                 </div>
               </div>
             </div>
           ))}
-        </div>
-
-        {/* Trust Indicators */}
-        <div className="mt-16 text-center fade-in-up" style={{ animationDelay: '0.4s' }}>
-          <div className="card-luxury p-8">
-            <h3 className="text-2xl font-heading font-semibold text-primary mb-6">
-              Trusted by Industry Leaders
-            </h3>
-            <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 items-center text-muted-foreground">
-              <div className="flex flex-col items-center">
-                <div className="text-3xl font-heading font-bold text-accent mb-2">Top 1%</div>
-                <div className="text-sm">National Agents</div>
-              </div>
-              <div className="flex flex-col items-center">
-                <div className="text-3xl font-heading font-bold text-accent mb-2">A+</div>
-                <div className="text-sm">BBB Rating</div>
-              </div>
-              <div className="flex flex-col items-center">
-                <div className="text-3xl font-heading font-bold text-accent mb-2">500+</div>
-                <div className="text-sm">5-Star Reviews</div>
-              </div>
-              <div className="flex flex-col items-center">
-                <div className="text-3xl font-heading font-bold text-accent mb-2">25+</div>
-                <div className="text-sm">Awards Won</div>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </section>
