@@ -4,29 +4,29 @@ const Properties = () => {
   const properties = [
     {
       id: 1,
-      image: "/src/assets/property-1.jpg",
+      image: "/src/assets/nekretnina-1.jpg",
       title: "Modern Downtown Loft",
       location: "Downtown District",
       beds: 2,
       baths: 2,
       sqft: "1,200 sq ft",
       status: "For Sale",
-      njuskaloLink: "https://www.njuskalo.hr/nekretnine/your-property-1-link" // Replace with actual njuskalo.hr link
+      njuskaloLink: "https://www.njuskalo.hr/nekretnine/posebna-svijetla-novogradnja-poluprizemlju-75.00-m2-oglas-47471894" // Replace with actual njuskalo.hr link
     },
     {
       id: 2,
-      image: "/src/assets/property-2.jpg",
+      image: "/src/assets/nekretnina-2.jpg",
       title: "Luxury Family Estate",
       location: "Prestigious Hills",
       beds: 5,
       baths: 4,
       sqft: "4,500 sq ft",
       status: "Sold",
-      njuskaloLink: "https://www.njuskalo.hr/nekretnine/your-property-2-link" // Replace with actual njuskalo.hr link
+      njuskaloLink: "https://www.njuskalo.hr/nekretnine/stan-zagreb-centar-238.00-m2-oglas-47206138" // Replace with actual njuskalo.hr link
     },
     {
       id: 3,
-      image: "/src/assets/property-3.jpg",
+      image: "/src/assets/nekretnina-3.jpg",
       title: "Contemporary Villa",
       location: "Garden District",
       beds: 4,

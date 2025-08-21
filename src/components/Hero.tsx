@@ -45,13 +45,11 @@ const Hero = () => {
       <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
         <div className="fade-in-up animate">
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-heading font-light mb-6 tracking-wide">
-            Your Partner in Premium
-            <span className="block text-primary font-medium">Real Estate</span>
+            Agent za nekretnine kojemu možete vjerovati
+            <br></br>
+            <br></br>
+            <span className="block text-primary font-medium">Eden Ville</span>
           </h1>
-          
-          <p className="text-lg md:text-xl text-white/90 mb-12 font-light leading-relaxed max-w-2xl mx-auto">
-            Find, rent, buy, manage and maintain properties in one place with professional expertise and personalized service.
-          </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button 
