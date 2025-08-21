@@ -22,7 +22,7 @@ const Properties = () => {
       baths: 4,
       sqft: "4,500 sq ft",
       status: "Sold",
-      njuskaloLink: "https://www.njuskalo.hr/nekretnine/stan-zagreb-centar-238.00-m2-oglas-47206138" // Replace with actual njuskalo.hr link
+      njuskaloLink: "https://www.njuskalo.hr/nekretnine/novogradnja-urbane-vile-stan-cca-80-m2-3-spavace-sobe-oglas-40375876" // Replace with actual njuskalo.hr link
     },
     {
       id: 3,
@@ -33,7 +33,7 @@ const Properties = () => {
       baths: 3,
       sqft: "3,200 sq ft",
       status: "For Sale",
-      njuskaloLink: "https://www.njuskalo.hr/nekretnine/your-property-3-link" // Replace with actual njuskalo.hr link
+      njuskaloLink: "https://www.njuskalo.hr/nekretnine/novogradnja-stanovi-apartmani-36-m2-106-m2-1-2-3-ss-oglas-47168031" // Replace with actual njuskalo.hr link
     },
   ];
 
@@ -49,7 +49,7 @@ const Properties = () => {
             Featured <span className="text-primary font-medium">Properties</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Discover exceptional properties that define luxury living and represent outstanding investment opportunities.
+          Otkrijte iznimne nekretnine koje utjelovljuju luksuzan život i predstavljaju izvrsne investicijske prilike.
           </p>
         </div>
 

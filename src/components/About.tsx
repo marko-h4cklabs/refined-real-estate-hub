@@ -8,10 +8,8 @@ const About = () => {
   ];
 
   const credentials = [
-    "Licensed Real Estate Professional",
-    "Certified Luxury Home Marketing Specialist",
-    "Member of National Association of Realtors",
-    "Graduate, Realtor Institute",
+    "Licencirani agent za nekretnine",
+    "Ovlašteni stručnjak za marketing luksuznih nekretnina",
   ];
 
   return (
@@ -25,9 +23,16 @@ const About = () => {
             </h2>
             
             <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-              With over 15 years of experience in luxury real estate, I specialize in helping clients 
-              find their dream properties and make informed investment decisions. My commitment to 
-              excellence and personalized service has earned the trust of hundreds of satisfied clients.
+              – Stručnost u području luksuznih nekretnina
+              <br></br>
+              – Diskretan i personaliziran pristup svakom klijentu
+              <br></br>
+              – Široka mreža provjerenih domaćih i međunarodnih partnera
+              <br></br>
+              – Transparentna komunikacija i vrhunska korisnička podrška
+              <br></br>
+              – Dubinsko razumijevanje tržišta i investicijskog potencijala
+
             </p>
             
             <div className="space-y-4 mb-8">
