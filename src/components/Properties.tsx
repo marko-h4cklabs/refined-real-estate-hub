@@ -7,35 +7,39 @@ const Properties = () => {
       image: "/src/assets/property-1.jpg",
       title: "Modern Downtown Loft",
       location: "Downtown District",
-      price: "$850,000",
       beds: 2,
       baths: 2,
       sqft: "1,200 sq ft",
-      status: "For Sale"
+      status: "For Sale",
+      njuskaloLink: "https://www.njuskalo.hr/nekretnine/your-property-1-link" // Replace with actual njuskalo.hr link
     },
     {
       id: 2,
       image: "/src/assets/property-2.jpg",
       title: "Luxury Family Estate",
       location: "Prestigious Hills",
-      price: "$2,250,000",
       beds: 5,
       baths: 4,
       sqft: "4,500 sq ft",
-      status: "Sold"
+      status: "Sold",
+      njuskaloLink: "https://www.njuskalo.hr/nekretnine/your-property-2-link" // Replace with actual njuskalo.hr link
     },
     {
       id: 3,
       image: "/src/assets/property-3.jpg",
       title: "Contemporary Villa",
       location: "Garden District",
-      price: "$1,450,000",
       beds: 4,
       baths: 3,
       sqft: "3,200 sq ft",
-      status: "For Sale"
+      status: "For Sale",
+      njuskaloLink: "https://www.njuskalo.hr/nekretnine/your-property-3-link" // Replace with actual njuskalo.hr link
     },
   ];
+
+  const handlePropertyClick = (njuskaloLink: string) => {
+    window.open(njuskaloLink, '_blank');
+  };
 
   return (
     <section id="properties" className="section-padding bg-white">
@@ -51,7 +55,12 @@ const Properties = () => {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {properties.map((property, index) => (
-            <div key={property.id} className="fade-in-up card-clean overflow-hidden" style={{ animationDelay: `${index * 0.1}s` }}>
+            <div 
+              key={property.id} 
+              className="fade-in-up card-clean overflow-hidden cursor-pointer hover:shadow-lg transition-shadow duration-300" 
+              style={{ animationDelay: `${index * 0.1}s` }}
+              onClick={() => handlePropertyClick(property.njuskaloLink)}
+            >
               <div className="relative">
                 <img
                   src={property.image}
@@ -73,13 +82,9 @@ const Properties = () => {
                   {property.location}
                 </div>
                 
-                <h3 className="text-xl font-heading font-medium text-foreground mb-2">
+                <h3 className="text-xl font-heading font-medium text-foreground mb-4">
                   {property.title}
                 </h3>
-                
-                <p className="text-2xl font-heading font-medium text-primary mb-4">
-                  {property.price}
-                </p>
                 
                 <div className="flex items-center justify-between text-sm text-muted-foreground">
                   <div className="flex items-center">

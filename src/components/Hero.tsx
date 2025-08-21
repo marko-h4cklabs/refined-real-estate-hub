@@ -38,8 +38,8 @@ const Hero = () => {
         />
       ))}
       
-      {/* Dark Overlay */}
-      <div className="hero-overlay" />
+      {/* Dark Overlay - Made darker for better text contrast */}
+      <div className="absolute inset-0 bg-black/60 z-[1]" />
       
       {/* Hero Content */}
       <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
