@@ -5,10 +5,10 @@ const Reviews = () => {
   const reviews = [
     {
       id: 1,
-      name: "Martina Jurić",
+      name: "Luka i Jelena Rasinec",
       role: "Kupac nekretnine",
       rating: 5,
-      text: "Hvala Matiji na profesionalnosti i fleksibilnosti. Osjećala sam se sigurno tijekom cijelog procesa kupnje kuće i sve je prošlo bez stresa.",
+      text: "Supruga i ja tražili smo gradilište blizu njezinih roditelja i važnih sadržaja, a naš san ostvario je agent Matija Kutnjak. Od prvog dana bio je poduzetan, pristupačan i komunikativan, odgovarao je na sva pitanja te se prilagođavao našim potrebama. Pružio nam je svu potrebnu dokumentaciju, savjetovao nas i olakšao komunikaciju s prodavateljem, zbog čega smo cijeli proces doživjeli bez stresa. Iako mlad, pokazao je samouvjerenost, pouzdanost i talent za posredovanje te ga toplo preporučujemo svim budućim kupcima i prodavateljima.",
       image: martinaPortrait
     },
     {
