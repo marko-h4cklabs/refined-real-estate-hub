@@ -4,11 +4,11 @@ const Reviews = () => {
   const reviews = [
     {
       id: 1,
-      name: "Matija Johnson1",
-      role: "Homebuyer",
+      name: "Martina Jurić",
+      role: "Kupac nekretnine",
       rating: 5,
-      text: "Exceptional service from start to finish. The attention to detail and market knowledge made our home buying experience seamless and stress-free.",
-      image: "https://images.unsplash.com/photo-1494790108755-2616b612b1e0?w=150&h=150&fit=crop&crop=face"
+      text: "Hvala timu EdenVille na profesionalnosti i fleksibilnosti. Osjećala sam se sigurno tijekom cijelog procesa kupnje kuće i sve je prošlo bez stresa.",
+      image: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.istockphoto.com%2Fphotos%2Ffemale-human-face-women-front-view&psig=AOvVaw1G8rCAldgZrzKpmdFFh_tx&ust=1755954719901000&source=images&cd=vfe&opi=89978449&ved=0CBUQjRxqFwoTCIDbkZ6_no8DFQAAAAAdAAAAABAE"
     },
     {
       id: 2,
