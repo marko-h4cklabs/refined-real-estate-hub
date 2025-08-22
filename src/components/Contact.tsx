@@ -41,7 +41,7 @@ const Contact = () => {
     {
       icon: MapPin,
       title: "Office",
-      details: "123 Luxury Ave, Premium District",
+      details: "skyoffice",
       subtitle: "Visit by appointment"
     },
     {
