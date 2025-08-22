@@ -4,7 +4,7 @@ const Reviews = () => {
   const reviews = [
     {
       id: 1,
-      name: "Matija Johnson",
+      name: "Matija Johnson1",
       role: "Homebuyer",
       rating: 5,
       text: "Exceptional service from start to finish. The attention to detail and market knowledge made our home buying experience seamless and stress-free.",
