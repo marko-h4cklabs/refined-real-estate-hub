@@ -18,6 +18,20 @@
     
     <link rel="canonical" href="https://luxuryrealty.com" />
     <meta name="keywords" content="luxury real estate, high-end properties, real estate agent, Beverly Hills, Manhattan, premium homes, luxury properties" />
+    
+    <!-- GitHub Pages SPA redirect script -->
+    <script type="text/javascript">
+      (function(l) {
+        if (l.search[1] === '/' ) {
+          var decoded = l.search.slice(1).split('&').map(function(s) { 
+            return s.replace(/~and~/g, '&')
+          }).join('?');
+          window.history.replaceState(null, null,
+              l.pathname.slice(0, -1) + decoded + l.hash
+          );
+        }
+      }(window.location))
+    </script>
   </head>
 
   <body>
