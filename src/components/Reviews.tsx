@@ -12,18 +12,18 @@ const Reviews = () => {
     },
     {
       id: 2,
-      name: "Michael Chen",
-      role: "Property Investor",
+      name: "Luka Babić",
+      role: "Kupac nekretnine",
       rating: 5,
-      text: "Outstanding expertise in luxury real estate. Helped us identify and secure multiple investment properties with excellent ROI potential.",
+      text: "Zahvljajući agenciji EdenVille, kupnja našeg doma prošla je brzo i bez komplikacija. Preporuke svima koji traže slično.",
       image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face"
     },
     {
       id: 3,
-      name: "Emily Rodriguez",
-      role: "First-time Buyer",
+      name: "Ivana Radniković",
+      role: "Prodavaoc stana",
       rating: 5,
-      text: "Patient, knowledgeable, and truly caring. Made our first home purchase an enjoyable journey rather than a stressful ordeal.",
+      text: "Nakon puno neuspjelih pokušaja prodaje našeg stana. Obratili smo se agentu Matiji i on nam je pomogao prodati naš stan u brzom vremenu bez komplikacija. Svaka preporuka svima",
       image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop&crop=face"
     },
   ];
