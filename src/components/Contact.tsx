@@ -29,7 +29,7 @@ const Contact = () => {
     {
       icon: Phone,
       title: "Phone",
-      details: "+1 (555) 123-4567",
+      details: "+385 91 555 8995",
       subtitle: "Nazovite bilo kada"
     },
     {
