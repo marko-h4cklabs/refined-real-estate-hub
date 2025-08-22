@@ -1,12 +1,15 @@
 import { Button } from "@/components/ui/button";
 import { useState, useEffect } from "react";
+import property1 from "@/assets/property-1.jpg";
+import property2 from "@/assets/property-2.jpg";
+import property3 from "@/assets/property-3.jpg";
 
 const Hero = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const images = [
-    '/src/assets/property-1.jpg',
-    '/src/assets/property-2.jpg',
-    '/src/assets/property-3.jpg'
+    property1,
+    property2,
+    property3
   ];
 
   useEffect(() => {

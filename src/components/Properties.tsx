@@ -1,10 +1,13 @@
 import { MapPin, Bed, Bath, Square } from "lucide-react";
+import nekretnina1 from "@/assets/nekretnina-1.jpg";
+import nekretnina2 from "@/assets/nekretnina-2.jpg";
+import nekretnina3 from "@/assets/nekretnina-3.jpg";
 
 const Properties = () => {
   const properties = [
     {
       id: 1,
-      image: "/src/assets/nekretnina-1.jpg",
+      image: nekretnina1,
       title: "Modern Downtown Loft",
       location: "Downtown District",
       beds: 2,
@@ -15,7 +18,7 @@ const Properties = () => {
     },
     {
       id: 2,
-      image: "/src/assets/nekretnina-2.jpg",
+      image: nekretnina2,
       title: "Luxury Family Estate",
       location: "Prestigious Hills",
       beds: 5,
@@ -26,7 +29,7 @@ const Properties = () => {
     },
     {
       id: 3,
-      image: "/src/assets/nekretnina-3.jpg",
+      image: nekretnina3,
       title: "Contemporary Villa",
       location: "Garden District",
       beds: 4,

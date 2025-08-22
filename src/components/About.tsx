@@ -1,4 +1,5 @@
 import { CheckCircle, Home, Users, Award } from "lucide-react";
+import agentPortrait from "@/assets/agent-portrait.jpg";
 
 const About = () => {
   const achievements = [
@@ -49,7 +50,7 @@ const About = () => {
           <div className="fade-in-up">
             <div className="relative">
               <img
-                src="/src/assets/agent-portrait.jpg"
+                src={agentPortrait}
                 alt="Real Estate Agent"
                 className="w-full h-96 object-cover rounded-none shadow-card"
               />
