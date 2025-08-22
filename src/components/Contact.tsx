@@ -57,10 +57,10 @@ const Contact = () => {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16 fade-in-up">
           <h2 className="text-3xl md:text-4xl font-heading font-light mb-6 text-foreground">
-            Get in <span className="text-primary font-medium">Touch</span>
+            Stupite u <span className="text-primary font-medium">Kontakt</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Ready to find your dream property or discuss your real estate needs? Let's start the conversation.
+            Spremni za pronaći ili prodati nekretninu iz snova?
           </p>
         </div>
 
@@ -68,7 +68,7 @@ const Contact = () => {
           {/* Contact Information */}
           <div className="fade-in-up">
             <h3 className="text-2xl font-heading font-medium mb-8 text-foreground">
-              Contact Information
+              Informacije o kontaktu
             </h3>
             
             <div className="space-y-6">

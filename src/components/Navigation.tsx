@@ -67,7 +67,7 @@ const Navigation = () => {
               onClick={() => scrollToSection('contact')}
               className={`btn-primary ${isScrolled ? '' : 'bg-primary/90'}`}
             >
-              Get in Touch
+              Stupite u kontakt
             </Button>
           </div>
 
