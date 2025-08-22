@@ -1,5 +1,5 @@
 import { Star, Quote } from "lucide-react";
-import martinaPortrait from "@/assets/martina-juric-portrait.jpg";
+import couplePhoto from "@/assets/luka-jelena-couple.jpg";
 
 const Reviews = () => {
   const reviews = [
@@ -9,7 +9,7 @@ const Reviews = () => {
       role: "Kupac nekretnine",
       rating: 5,
       text: "Supruga i ja tražili smo gradilište blizu njezinih roditelja i važnih sadržaja, a naš san ostvario je agent Matija Kutnjak. Od prvog dana bio je poduzetan, pristupačan i komunikativan, odgovarao je na sva pitanja te se prilagođavao našim potrebama. Pružio nam je svu potrebnu dokumentaciju, savjetovao nas i olakšao komunikaciju s prodavateljem, zbog čega smo cijeli proces doživjeli bez stresa. Iako mlad, pokazao je samouvjerenost, pouzdanost i talent za posredovanje te ga toplo preporučujemo svim budućim kupcima i prodavateljima.",
-      image: martinaPortrait
+      image: couplePhoto
     },
     {
       id: 2,
