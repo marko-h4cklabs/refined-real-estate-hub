@@ -29,11 +29,11 @@ const Properties = () => {
     {
       id: 3,
       image: nekretnina3,
-      title: "Stanovi i apartmani",
-      location: "Konavle, Zvekovica",
-      sqft: "36 m2 - 106 m2",
+      title: "5-SOBNI DVOETAŽNI DIZAJNERSKI STAN",
+      location: "ZAGREB, DONJI GRAD",
+      sqft: "233 m2",
       status: "For Sale",
-      njuskaloLink: "https://www.njuskalo.hr/nekretnine/novogradnja-stanovi-apartmani-36-m2-106-m2-1-2-3-ss-oglas-47168031" // Replace with actual njuskalo.hr link
+      njuskaloLink: "https://www.njuskalo.hr/nekretnine/stan-zagreb-centar-238.00-m2-oglas-47206138" // Replace with actual njuskalo.hr link
     },
   ];
 
