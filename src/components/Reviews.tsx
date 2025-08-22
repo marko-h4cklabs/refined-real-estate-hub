@@ -8,7 +8,7 @@ const Reviews = () => {
       name: "Martina Jurić",
       role: "Kupac nekretnine",
       rating: 5,
-      text: "Hvala timu EdenVille na profesionalnosti i fleksibilnosti. Osjećala sam se sigurno tijekom cijelog procesa kupnje kuće i sve je prošlo bez stresa.",
+      text: "Hvala Matiji na profesionalnosti i fleksibilnosti. Osjećala sam se sigurno tijekom cijelog procesa kupnje kuće i sve je prošlo bez stresa.",
       image: martinaPortrait
     },
     {
