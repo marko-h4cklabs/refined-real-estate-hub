@@ -3,9 +3,9 @@ import agentPortrait from "@/assets/agent-portrait.jpg";
 
 const About = () => {
   const achievements = [
-    { icon: Home, number: "250+", label: "Properties Sold" },
-    { icon: Users, number: "150+", label: "Happy Clients" },
-    { icon: Award, number: "15+", label: "Years Experience" },
+    { icon: Home, number: "15+", label: "Prodanih nekretnina" },
+    { icon: Users, number: "50+", label: "Zadovoljnih klijenata" },
+    { icon: Award, number: "3+", label: "Godine iskustva" },
   ];
 
   const credentials = [
