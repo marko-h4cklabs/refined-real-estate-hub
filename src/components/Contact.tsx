@@ -35,20 +35,19 @@ const Contact = () => {
     {
       icon: Mail,
       title: "Email",
-      details: "hello@luxuryrealty.com",
+      details: "matija@imbnekretnine.hr",
       subtitle: "24/7 response"
     },
     {
       icon: MapPin,
       title: "Office",
-      details: "skyoffice",
+      details: "Palmotićeva 5",
       subtitle: "Visit by appointment"
     },
     {
       icon: Clock,
       title: "Hours",
-      details: "Mon-Sat: 9AM-7PM",
-      subtitle: "Sunday by appointment"
+      details: "24/7",
     }
   ];
 
