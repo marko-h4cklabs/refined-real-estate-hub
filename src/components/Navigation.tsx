@@ -38,7 +38,7 @@ const Navigation = () => {
             <h2 className={`text-xl font-heading font-medium tracking-wide ${
               isScrolled ? 'text-foreground' : 'text-white'
             }`}>
-              <span className={isScrolled ? 'text-primary' : 'text-primary'}>Luxury</span> Realty
+              <span className={isScrolled ? 'text-primary' : 'text-primary'}>Eden</span> Ville
             </h2>
           </div>
 
