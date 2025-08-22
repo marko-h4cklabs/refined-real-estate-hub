@@ -10,7 +10,9 @@ const About = () => {
 
   const credentials = [
     "Licencirani agent za nekretnine",
-    "Ovlašteni stručnjak za marketing luksuznih nekretnina",
+    "+10 godina iskustva u prodaji",
+    "Poslovni savjetnik",
+    "Investicije / Kupnje / Najmovi"
   ];
 
   return (
@@ -24,15 +26,15 @@ const About = () => {
             </h2>
             
             <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-              – Stručnost u području luksuznih nekretnina
+              – EdenVille je agencija za premium nekretnine specijalizirana za luksuzne vile, ekskluzivne stanove i investicijske projekte na prestižnim lokacijama u Hrvatskoj.
               <br></br>
-              – Diskretan i personaliziran pristup svakom klijentu
+              – Ponosni su partneri dubrovačke agencije IMB nekretnine s više od 30 godina uspješnog poslovanja.
               <br></br>
-              – Široka mreža provjerenih domaćih i međunarodnih partnera
+              - Osnivač je Matija Kutnjak, licencirani agent s dugogodišnjim iskustvom i prodajama većim od milijun eura.
               <br></br>
-              – Transparentna komunikacija i vrhunska korisnička podrška
+              – Matija je poznat po profesionalizmu, ambicioznosti i disciplini, a bivši je državni prvak u powerliftingu.
               <br></br>
-              – Dubinsko razumijevanje tržišta i investicijskog potencijala
+              – Agencija vodi kompleksne projekte i investicije s naglaskom na diskreciju, personalizirani pristup i vrhunsku uslugu klijentima.
 
             </p>
             
