@@ -37,7 +37,7 @@ const Reviews = () => {
             Client <span className="text-primary font-medium">Testimonials</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Hear what my clients have to say about their experience working with me.
+            Što naši klijenti kažu o nama
           </p>
         </div>
 

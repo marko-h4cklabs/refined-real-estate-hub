@@ -59,14 +59,14 @@ const Hero = () => {
               onClick={() => scrollToSection('properties')}
               className="btn-primary text-lg"
             >
-              View Properties
+              Nekretnine
             </Button>
             <Button 
               onClick={() => scrollToSection('contact')}
               variant="outline"
               className="btn-white text-lg"
             >
-              Contact Me
+              Kontakt
             </Button>
           </div>
         </div>

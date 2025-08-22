@@ -30,7 +30,7 @@ const Contact = () => {
       icon: Phone,
       title: "Phone",
       details: "+1 (555) 123-4567",
-      subtitle: "Call anytime"
+      subtitle: "Nazovite bilo kada"
     },
     {
       icon: Mail,
