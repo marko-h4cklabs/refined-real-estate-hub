@@ -17,7 +17,6 @@ const Reviews = () => {
       role: "Kupac nekretnine",
       rating: 5,
       text: "Zahvljajući agenciji EdenVille, kupnja našeg doma prošla je brzo i bez komplikacija. Preporuke svima koji traže slično.",
-      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face"
     },
     {
       id: 3,
