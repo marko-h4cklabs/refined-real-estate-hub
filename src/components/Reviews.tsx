@@ -14,14 +14,14 @@ const Reviews = () => {
     {
       id: 2,
       name: "Luka Babić",
-      role: "Kupac nekretnine",
+      role: "Kupac stana",
       rating: 5,
       text: "Zahvljajući agenciji EdenVille, kupnja našeg doma prošla je brzo i bez komplikacija. Preporuke svima koji traže slično.",
     },
     {
       id: 3,
       name: "Ivana Radniković",
-      role: "Prodavaoc stana",
+      role: "Prodavač stana",
       rating: 5,
       text: "Nakon puno neuspjelih pokušaja prodaje našeg stana. Obratili smo se agentu Matiji i on nam je pomogao prodati naš stan u brzom vremenu bez komplikacija. Svaka preporuka svima",
       image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop&crop=face"
